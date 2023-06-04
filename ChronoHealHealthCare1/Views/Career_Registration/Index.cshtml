@@ -1,0 +1,124 @@
+﻿@model IEnumerable<ChronoHealHealthCare1.Models.Career_Registration>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container p-5" style="overflow-x:scroll">
+<h2>Career Registration Form</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CRName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aadhar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Addrss)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DoctorRegistration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qualification)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EducationBoard)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Specialization)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExperienceInYears)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CRId1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender1.gender1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Marital.MStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.State.States)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CRName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aadhar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Addrss)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DoctorRegistration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qualification)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EducationBoard)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Specialization)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExperienceInYears)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CRId1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender1.gender1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marital.MStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State.States)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CRId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CRId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CRId })
+        </td>
+    </tr>
+}
+
+</table>
+</div>

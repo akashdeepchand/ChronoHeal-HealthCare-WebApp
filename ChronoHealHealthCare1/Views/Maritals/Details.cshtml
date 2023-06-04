@@ -1,0 +1,27 @@
+﻿@model ChronoHealHealthCare1.Models.Marital
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container p-5">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Marital</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.MStatus)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MStatus)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.MId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

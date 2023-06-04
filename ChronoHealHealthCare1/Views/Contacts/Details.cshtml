@@ -1,0 +1,51 @@
+﻿@model ChronoHealHealthCare1.Models.Contact
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container p-5">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Query</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.CtName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CtName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CtEmail)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CtEmail)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CtSubject)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CtSubject)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CtMessage)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CtMessage)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.CtId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

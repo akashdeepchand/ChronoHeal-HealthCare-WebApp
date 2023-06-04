@@ -1,0 +1,147 @@
+﻿@model ChronoHealHealthCare1.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+<div class="container py-5">
+    <h2 class="col-3 text-center" style="margin-bottom: 30px; margin-left: 230px; padding:10px 10px 10px 10px; border-radius: 30px; box-shadow: 10px 10px 20px rgba(0,0,0,0.2), -10px -10px 20px 0px rgba(255,255,255,1); backdrop-filter: blur(5px)">@ViewBag.Title</h2>
+    <div class="row">
+        <div class="col-md-8 before1 text-center" style="border-radius: 40px; padding-top: 15px; padding-bottom: 15px">
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <h4>Create a new account</h4>
+                <hr />
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div class="form-group">
+                   
+                    <div class="col-md-6" style="margin-left:190px">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control border-0 text-box single-line bg-transparent", @placeholder = "Email Id", @style = "max-width:100%; height:55px; border-radius:30px; box-shadow: rgb(200, 200, 200) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    
+                    <div class="col-md-6" style="margin-left:190px">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control border-0 text-box single-line bg-transparent", @placeholder = "New Password", @style = "max-width:100%; height:55px; border-radius:30px; box-shadow: rgb(200, 200, 200) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    
+                    <div class="col-md-6" style="margin-left:190px">
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control border-0 text-box single-line bg-transparent", @placeholder = "Confirm Password", @style = "max-width:100%; height:55px; border-radius:30px; box-shadow: rgb(200, 200, 200) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="">
+                        <input type="submit" value="Register" class="btn btn-primary w-100 py-3" style="border-radius: 30px; height:55px; box-shadow: 4px 4px 10px rgba(0,0,0,0.3), -6px -6px 10px 0px rgba(255,255,255,1)" />
+                    </div>
+                </div>
+
+
+            }
+            </div>
+            <div class="col-md-4">
+                
+                <img src="~/Images/logo.jpg" style="border-radius:50%; height:370px; width:370px; opacity: 0.5; margin-left:20px; margin-top:5px" />
+                
+            </div>
+        </div>
+    </div>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+
+    @*<section class="intro">
+            <div class="bg-image h-100" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/glassmorphism-article/img5.jpg');">
+                <div class="mask d-flex align-items-center h-100">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+                                <div class="card mask-custom">
+                                    <div class="card-body p-5 text-white">
+
+                                        <div class="my-4">
+
+                                            <h2 class="text-center mb-5">Register Form</h2>
+
+                                            <form>
+                                                2 column grid layout with text inputs for the first and last names
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 mb-4">
+                                                        <div class="form-outline form-white">
+                                                            <input type="text" id="form3Example1" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="form3Example1">First name</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                                        <div class="form-outline form-white">
+                                                            <input type="text" id="form3Example2" class="form-control form-control-lg" />
+                                                            <label class="form-label" for="form3Example2">Last name</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                Email input
+                                                <div class="form-outline form-white mb-4">
+                                                    <input type="email" id="form3Example3" class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example3">Email address</label>
+                                                </div>
+
+                                                Password input
+                                                <div class="form-outline form-white mb-4">
+                                                    <input type="password" id="form3Example4" class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example4">Password</label>
+                                                </div>
+
+                                                Checkbox
+                                                <div class="form-check d-flex justify-content-center mb-4">
+                                                    <input class="form-check-input me-2"
+                                                           type="checkbox"
+                                                           value=""
+                                                           id="form2Example3"
+                                                           checked />
+                                                    <label class="form-check-label" for="form2Example3">
+                                                        Subscribe to our newsletter
+                                                    </label>
+                                                </div>
+
+                                                Submit button
+                                                <button type="submit" class="btn btn-light btn-block mb-4">Sign up</button>
+
+                                                Register buttons
+                                                <div class="text-center">
+                                                    <p>or sign up with:</p>
+                                                    <button type="button" class="btn btn-light btn-floating mx-1">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-light btn-floating mx-1">
+                                                        <i class="fab fa-google"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-light btn-floating mx-1">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-light btn-floating mx-1">
+                                                        <i class="fab fa-github"></i>
+                                                    </button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+
+
+
+
+
+

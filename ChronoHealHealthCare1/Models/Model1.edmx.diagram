@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c88522297ab342bcaa7c635e33e4f143" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="ChronoHealDbModel.C__MigrationHistory" Width="1.5" PointX="3.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Appointment" Width="1.5" PointX="8.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.AspNetRole" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.AspNetUserClaim" Width="1.5" PointX="4" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.AspNetUserLogin" Width="1.5" PointX="4" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.AspNetUser" Width="1.5" PointX="1.125" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Career_Registration" Width="1.5" PointX="13.125" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Contact" Width="1.5" PointX="18.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Department" Width="1.5" PointX="15.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Doctor" Width="1.5" PointX="18.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Gender" Width="1.5" PointX="10.5" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Marital" Width="1.5" PointX="10.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Role" Width="1.5" PointX="7.375" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.State" Width="1.5" PointX="10.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Timing" Width="1.5" PointX="15.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.UserRoleMapping" Width="1.5" PointX="6.125" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChronoHealDbModel.Ward" Width="1.5" PointX="15.5" PointY="6.25" IsExpanded="true" />
+        <AssociationConnector Association="ChronoHealDbModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__UserRoleM__UserI__5BAD9CC8" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__Career_Re__Gende__4D5F7D71" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__Career_Re__Marti__4E53A1AA" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__Career_Re__State__4F47C5E3" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__Doctor__Dep__3D2915A8" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__Doctor__Timing__3E1D39E1" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__Doctor__Ward__3F115E1A" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__UserRoleM__RoleI__5CA1C101" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.AspNetUserRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__Appointme__AGend__0880433F" />
+        <AssociationConnector Association="ChronoHealDbModel.FK__Appointme__State__09746778" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

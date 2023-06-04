@@ -1,0 +1,115 @@
+﻿@model ChronoHealHealthCare1.Models.Appointment
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container">
+<h2>Appointment Details</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AFName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AFName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ALName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ALName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AContact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ASymptoms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ASymptoms)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecieptId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecieptId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Addrss)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Addrss)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender.gender1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender.gender1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State.States)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State.States)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AId }) |
+    @Html.ActionLink("Go to Home", "Index", "Home")
+</p>
+</div>

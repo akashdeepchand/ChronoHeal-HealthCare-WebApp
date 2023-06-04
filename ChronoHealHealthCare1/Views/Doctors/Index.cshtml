@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ChronoHealHealthCare1.Models.Doctor>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container p-5">
+    <h2>Our Doctors</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Department.Department1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Timing1.Timing1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ward1.WardNo)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Department.Department1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Timing1.Timing1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ward1.WardNo)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.DId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.DId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.DId })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

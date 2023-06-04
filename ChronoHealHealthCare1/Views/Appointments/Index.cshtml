@@ -1,0 +1,100 @@
+﻿@model IEnumerable<ChronoHealHealthCare1.Models.Appointment>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container p-y">
+<h2>Appointment List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AFName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ALName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AContact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ASymptoms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecieptId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Addrss)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender.gender1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.State.States)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AFName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ALName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AContact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ASymptoms)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecieptId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Addrss)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender.gender1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State.States)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AId })
+        </td>
+    </tr>
+}
+
+</table>
+</div>

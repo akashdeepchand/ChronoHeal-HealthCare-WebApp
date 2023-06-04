@@ -1,0 +1,147 @@
+﻿@model ChronoHealHealthCare1.Models.Career_Registration
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container p-5">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Career_Registration</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.CRName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CRName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Contact)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Contact)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Aadhar)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Aadhar)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DateOfBirth)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DateOfBirth)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Addrss)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Addrss)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.City)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.City)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DoctorRegistration)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DoctorRegistration)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Qualification)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Qualification)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EducationBoard)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EducationBoard)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Specialization)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Specialization)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ExperienceInYears)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ExperienceInYears)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CRId1)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CRId1)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Gender1.gender1)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Gender1.gender1)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Marital.MStatus)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Marital.MStatus)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.State.States)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.State.States)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.CRId }) |
+        @Html.ActionLink("Go to Home", "Index","Home")
+    </p>
+</div>

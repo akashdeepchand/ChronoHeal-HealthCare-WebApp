@@ -1,0 +1,98 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background-image: url('../Images/1.jpg');
+    background-attachment:fixed
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 0px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.rightPortion {
+    position: absolute;
+    resize:both;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    height: 700px;
+    width: 300px;
+    margin-left: 90%;
+    margin-right: 0%;
+    border-radius: 5px;
+}
+
+.centerPortion {
+    position: absolute;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    height: 700px;
+    width: 980px;
+    margin-left: 0%;
+    margin-right: 2%;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.bottomPortion {
+    position: absolute;
+    margin-top: 37%;
+    margin-bottom: 2%;
+    height: 150px;
+    width: 1290px;
+    margin-left: 40%;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+
+.padding {
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.topPadding {
+    padding-top: 25px;
+}
+
+.radius {
+    border-radius: 5px;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px
+}
+
+.font1{
+    font-family:'Century Gothic'
+}
+@font-face{
+    font-family: font1;
+    src: url(../fonts/glyphicons-halflings-regular.ttf)
+}
+
+div.before1 {
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2), -10px -10px 20px 0px rgba(255,255,255,1);
+    backdrop-filter:blur(5px)
+}
+
+div.hov1:hover, div.hov1:active {
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2), -10px -10px 20px 0px rgba(255,255,255,1);
+}
+div.hov2:hover, div.hov2:active {
+    box-shadow: 15px 15px 25px rgba(0,0,0,0.2), -15px -15px 25px 0px rgba(255,255,255,1);
+    /*height:110%;
+    width:110%;
+    font-size:110%*/
+}

@@ -1,0 +1,67 @@
+﻿
+@if (Request.IsAuthenticated)
+{ 
+
+    <nav id="navbar-example2" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">User Panel</a>
+        <div class="nav nav-pills">
+            @Html.ActionLink("Account", "Index", "Manage", new { area = "" }, new { @class = "nav-item nav-link" })
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Form Data</a>
+                <div class="dropdown-menu">
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Appointments", "Index", "Appointments", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Manage Roles", "Index", "UserRoleMappings", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Career Form", "Index", "Career_Registration", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">HealthCare Data</a>
+                <div class="dropdown-menu">
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Doctors", "Index", "Doctors", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Departments", "Index", "Departments", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Query Messages", "Index", "Contacts", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Internal Data</a>
+                <div class="dropdown-menu">
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Wards", "Index", "Wards", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Shifts", "Index", "Timings", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Gender", "Index", "Genders", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Marital Status", "Index", "Maritals", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("States", "Index", "States", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                    @Html.ActionLink("Roles", "Index", "Roles", new { area = "" }, new { @class = "dropdown-item" })
+                    <div role="separator" class="dropdown-divider"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    @*<nav id="navbar-example2" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">User Panel</a>
+        <div class="nav nav-pills">
+            @Html.ActionLink("Account", "Index", "Manage", new { area = "" }, new { @class = "nav-item nav-link" })
+            @Html.ActionLink("Appointments", "Create", "Appointments", new { area = "" }, new { @class = "nav-item nav-link" })
+            @Html.ActionLink("User Details", "Create", "PDetails", new { area = "" }, new { @class = "nav-item nav-link" })
+            @Html.ActionLink("Career Opportunity", "Create", "Career_Registration", new { area = "" }, new { @class = "nav-item nav-link" })
+        </div>
+    </nav>*@
+}
+else
+{
+
+}

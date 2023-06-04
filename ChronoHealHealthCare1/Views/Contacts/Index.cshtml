@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ChronoHealHealthCare1.Models.Contact>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container p-5">
+    <h2>Query List</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CtName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CtEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CtSubject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CtMessage)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CtName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CtEmail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CtSubject)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CtMessage)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CtId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.CtId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CtId })
+                </td>
+            </tr>
+        }
+
+    </table>
+ </div>
