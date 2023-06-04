@@ -442,6 +442,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="scss\bootsrap\" />
+    <Folder Include="SQL database Query\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
